@@ -87,6 +87,15 @@ export default function App() {
             Estudo 2 →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Hooks e Estados</Text>
+            <Text style={styles["card-description"]}>18/09</Text>
+          </View>
+          <Link href="/hooks" style={styles["card-link"]}>
+            Aula 8 →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
