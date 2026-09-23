@@ -96,6 +96,15 @@ export default function App() {
             Aula 8 →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>FlatList</Text>
+            <Text style={styles["card-description"]}>25/09</Text>
+          </View>
+          <Link href="/flatlist" style={styles["card-link"]}>
+            Atividade complementar →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
