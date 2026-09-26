@@ -105,6 +105,15 @@ export default function App() {
             Atividade complementar →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Lista com SQLite</Text>
+            <Text style={styles["card-description"]}>25/09</Text>
+          </View>
+          <Link href="/db-list" style={styles["card-link"]}>
+            Aula 9 →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
