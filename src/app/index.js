@@ -114,6 +114,15 @@ export default function App() {
             Aula 9 →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Lista de flores</Text>
+            <Text style={styles["card-description"]}>02/10</Text>
+          </View>
+          <Link href="/gardenbook" style={styles["card-link"]}>
+            Aula 10 →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
