@@ -123,6 +123,42 @@ export default function App() {
             Aula 10 →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>CEP</Text>
+            <Text style={styles["card-description"]}>23/10</Text>
+          </View>
+          <Link href="/cep" style={styles["card-link"]}>
+            Aula 13 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Random Dog</Text>
+            <Text style={styles["card-description"]}>23/10</Text>
+          </View>
+          <Link href="/random-dog" style={styles["card-link"]}>
+            Aula 13 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Pokedéx</Text>
+            <Text style={styles["card-description"]}>23/10</Text>
+          </View>
+          <Link href="/pokemon" style={styles["card-link"]}>
+            Aula 13 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>CNPJ</Text>
+            <Text style={styles["card-description"]}>23/10</Text>
+          </View>
+          <Link href="/cnpj" style={styles["card-link"]}>
+            Aula 13 →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
