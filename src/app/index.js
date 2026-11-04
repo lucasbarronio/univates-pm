@@ -159,6 +159,15 @@ export default function App() {
             Aula 13 →
           </Link>
         </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Herbário</Text>
+            <Text style={styles["card-description"]}>30/10</Text>
+          </View>
+          <Link href="/herbarium" style={styles["card-link"]}>
+            Aula 14 →
+          </Link>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
