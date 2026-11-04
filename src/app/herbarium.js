@@ -121,18 +121,18 @@ export default function Herbarium() {
       <FlatList style={styles.list}
         data={plants}
         renderItem={({ item }) => (
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles['item']}
-          >
-            <Text style={styles["item-text"]}>{item.commonName} / {item.scientificName}</Text>
-            <Text style={styles["item-subtext"]}>{item.family}</Text>
-            <Text style={styles["item-subtext"]}>{item.habitat}</Text>
-            <View style={styles["item-description"]}>
+          <View style={styles["item-wrapper"]}>
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles["item"]}
+            >
+              <Text style={styles["item-text"]}>{item.commonName} / {item.scientificName}</Text>
+              <Text style={styles["item-subtext"]}>{item.family}</Text>
+              <Text style={styles["item-subtext"]}>{item.habitat}</Text>
               <Text style={styles["item-subtext"]}>{item.description}</Text>
-            </View>
-          </ScrollView>
+            </ScrollView>
+          </View>
         )}
       />
     </SafeAreaView>
@@ -178,6 +178,10 @@ const styles = StyleSheet.create({
   'list': {
     flex: 1,
   },
+  'item-wrapper': {
+    marginBottom: 10,
+    width: "100%",
+  },
   'item': {
     alignItems: "center",
     backgroundColor: "#ffffff",
@@ -185,12 +189,11 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     flexDirection: "row",
-    marginBottom: 10,
     minHeight: 64,
+    minWidth: "100%",
     paddingHorizontal: 14,
     paddingVertical: 12,
     gap: 10,
-    flex: 1
   },
   'item-text': {
     color: "#1f1f1f",
@@ -200,8 +203,5 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     color: "#68756b",
     fontSize: 12,
-  },
-  'item-description': {
-    marginBottom: 10,
   },
 });
