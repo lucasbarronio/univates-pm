@@ -7,137 +7,30 @@ export default function App() {
     <SafeAreaView style={styles["app"]}>
       <Stack.Screen options={{ title: "Painel" }} />
 
+      <View style={styles["header"]}>
+        <View style={styles["avatar"]} />
+        <View>
+          <Text style={styles["greetings"]}>Olá, Estudante</Text>
+          <Text style={styles["subtitle"]}>Bem-vindo de volta</Text>
+        </View>
+      </View>
+
       <ScrollView>
-        <View style={styles["header"]}>
-          <View style={styles["avatar"]} />
-          <View>
-            <Text style={styles["greetings"]}>Olá, Estudante</Text>
-            <Text style={styles["subtitle"]}>Bem-vindo de volta</Text>
-          </View>
-        </View>
         <View style={styles["card"]}>
           <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Primeira aula</Text>
-            <Text style={styles["card-description"]}>31/07</Text>
+            <Text style={styles["card-title"]}>Herbário</Text>
+            <Text style={styles["card-description"]}>30/10</Text>
           </View>
-          <Link href="/first-class" style={styles["card-link"]}>
-            Aula 1 →
+          <Link href="/herbarium" style={styles["card-link"]}>
+            Aula 14 →
           </Link>
         </View>
         <View style={styles["card"]}>
           <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Componentes</Text>
-            <Text style={styles["card-description"]}>07/08</Text>
-          </View>
-          <Link href="/components" style={styles["card-link"]}>
-            Aula 2 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Estilização</Text>
-            <Text style={styles["card-description"]}>14/08</Text>
-          </View>
-          <Link href="/styling" style={styles["card-link"]}>
-            Aula 3 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Desenhando</Text>
-            <Text style={styles["card-description"]}>21/08</Text>
-          </View>
-          <Link href="/drawing" style={styles["card-link"]}>
-            Aula 4 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Player de música</Text>
-            <Text style={styles["card-description"]}>28/08</Text>
-          </View>
-          <Link href="/music-player" style={styles["card-link"]}>
-            Aula 5.1 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Clima</Text>
-            <Text style={styles["card-description"]}>28/08</Text>
-          </View>
-          <Link href="/weather" style={styles["card-link"]}>
-            Aula 5.2 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Primeira avaliação</Text>
-            <Text style={styles["card-description"]}>04/09</Text>
-          </View>
-          <Link href="/first-exam" style={styles["card-link"]}>
-            Aula 6 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Estudos Independentes 2</Text>
-            <Text style={styles["card-description"]}>11/09</Text>
-          </View>
-          <Link href="/ei-2" style={styles["card-link"]}>
-            Estudo 2 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Hooks e Estados</Text>
-            <Text style={styles["card-description"]}>18/09</Text>
-          </View>
-          <Link href="/hooks" style={styles["card-link"]}>
-            Aula 8 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>FlatList</Text>
-            <Text style={styles["card-description"]}>25/09</Text>
-          </View>
-          <Link href="/flatlist" style={styles["card-link"]}>
-            Atividade complementar →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Lista com SQLite</Text>
-            <Text style={styles["card-description"]}>25/09</Text>
-          </View>
-          <Link href="/db-list" style={styles["card-link"]}>
-            Aula 9 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Lista de flores</Text>
-            <Text style={styles["card-description"]}>02/10</Text>
-          </View>
-          <Link href="/gardenbook" style={styles["card-link"]}>
-            Aula 10 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>CEP</Text>
+            <Text style={styles["card-title"]}>CNPJ</Text>
             <Text style={styles["card-description"]}>23/10</Text>
           </View>
-          <Link href="/cep" style={styles["card-link"]}>
-            Aula 13 →
-          </Link>
-        </View>
-        <View style={styles["card"]}>
-          <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Random Dog</Text>
-            <Text style={styles["card-description"]}>23/10</Text>
-          </View>
-          <Link href="/random-dog" style={styles["card-link"]}>
+          <Link href="/cnpj" style={styles["card-link"]}>
             Aula 13 →
           </Link>
         </View>
@@ -152,20 +45,128 @@ export default function App() {
         </View>
         <View style={styles["card"]}>
           <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>CNPJ</Text>
+            <Text style={styles["card-title"]}>Random Dog</Text>
             <Text style={styles["card-description"]}>23/10</Text>
           </View>
-          <Link href="/cnpj" style={styles["card-link"]}>
+          <Link href="/random-dog" style={styles["card-link"]}>
             Aula 13 →
           </Link>
         </View>
         <View style={styles["card"]}>
           <View style={styles["card-header"]}>
-            <Text style={styles["card-title"]}>Herbário</Text>
-            <Text style={styles["card-description"]}>30/10</Text>
+            <Text style={styles["card-title"]}>CEP</Text>
+            <Text style={styles["card-description"]}>23/10</Text>
           </View>
-          <Link href="/herbarium" style={styles["card-link"]}>
-            Aula 14 →
+          <Link href="/cep" style={styles["card-link"]}>
+            Aula 13 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Lista de flores</Text>
+            <Text style={styles["card-description"]}>02/10</Text>
+          </View>
+          <Link href="/gardenbook" style={styles["card-link"]}>
+            Aula 10 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Lista com SQLite</Text>
+            <Text style={styles["card-description"]}>25/09</Text>
+          </View>
+          <Link href="/db-list" style={styles["card-link"]}>
+            Aula 9 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>FlatList</Text>
+            <Text style={styles["card-description"]}>25/09</Text>
+          </View>
+          <Link href="/flatlist" style={styles["card-link"]}>
+            Atividade complementar →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Hooks e Estados</Text>
+            <Text style={styles["card-description"]}>18/09</Text>
+          </View>
+          <Link href="/hooks" style={styles["card-link"]}>
+            Aula 8 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Estudos Independentes 2</Text>
+            <Text style={styles["card-description"]}>11/09</Text>
+          </View>
+          <Link href="/ei-2" style={styles["card-link"]}>
+            Estudo 2 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Primeira avaliação</Text>
+            <Text style={styles["card-description"]}>04/09</Text>
+          </View>
+          <Link href="/first-exam" style={styles["card-link"]}>
+            Aula 6 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Clima</Text>
+            <Text style={styles["card-description"]}>28/08</Text>
+          </View>
+          <Link href="/weather" style={styles["card-link"]}>
+            Aula 5.2 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Player de música</Text>
+            <Text style={styles["card-description"]}>28/08</Text>
+          </View>
+          <Link href="/music-player" style={styles["card-link"]}>
+            Aula 5.1 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Desenhando</Text>
+            <Text style={styles["card-description"]}>21/08</Text>
+          </View>
+          <Link href="/drawing" style={styles["card-link"]}>
+            Aula 4 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Estilização</Text>
+            <Text style={styles["card-description"]}>14/08</Text>
+          </View>
+          <Link href="/styling" style={styles["card-link"]}>
+            Aula 3 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Componentes</Text>
+            <Text style={styles["card-description"]}>07/08</Text>
+          </View>
+          <Link href="/components" style={styles["card-link"]}>
+            Aula 2 →
+          </Link>
+        </View>
+        <View style={styles["card"]}>
+          <View style={styles["card-header"]}>
+            <Text style={styles["card-title"]}>Primeira aula</Text>
+            <Text style={styles["card-description"]}>31/07</Text>
+          </View>
+          <Link href="/first-class" style={styles["card-link"]}>
+            Aula 1 →
           </Link>
         </View>
       </ScrollView>
